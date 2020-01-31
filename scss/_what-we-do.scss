@@ -1,0 +1,28 @@
+.what-we-do,
+.what-we-do-dif {
+	padding: 10vh 0;
+	font-size: 1.1rem;
+	font-weight: 500;
+	// font-family: "Josefin Sans", sans-serif;
+}
+
+.what-we-do-dif {
+	// background: lighten($primary-color, 7);
+	background: $background;
+	// color: $text-rev;
+	padding: 5vh 0;
+
+	// .heading {
+	// 	h1 {
+	// 		color: $white;
+	// 	}
+	// }
+	.wwdd-content-wrapper {
+		margin-left: 1.5rem;
+		ul {
+			li {
+				line-height: 2rem;
+			}
+		}
+	}
+}

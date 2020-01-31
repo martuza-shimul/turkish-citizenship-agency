@@ -1,0 +1,862 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!-- Bootstrap CDN for css -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="./dist/css/style.css" />
+
+		<title>London PayPerCustomer</title>
+
+		<!-- Favicons
+	================================================== -->
+	<link rel="icon" href="./dist/img/favicon.png" type="image/x-icon" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="./dist/img/favicon.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./dist/img/favicon.png" />
+	<link rel="apple-touch-icon-precomposed" href="./dist/img/favicon.png" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+				<a href="#" class="navbar-brand">
+					<img
+						class="img-fluid img-responsive"
+						src="./dist/img/logo.png"
+						alt="London PPC logo"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<!-- <li class="nav-item ">
+							<a  class="nav-link" href="#home"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li> -->
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#why-us">Why us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#what-we-do">What we do</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#process">process</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link scroll" href="#contact">Contact</a>
+						</li>
+						
+						<li class="nav-item">
+							<a
+								class="nav-link button"
+								id="button"
+								href="#"
+								data-toggle="modal"
+								data-target=".bd-example-modal-lg"
+								>Get started</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section class="modal-wrapper">
+				<div class="container-lg">
+					<!-- Modal -->
+					<div class="modal fade bd-example-modal-lg " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<!-- <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div> -->
+								<div class="modal-body">
+									<div class="quote-engine-wrapper d-flex justify-content-center">
+										<form action="./dist/php/data.php" method="POST">
+											<div class="first">
+												<h5 class="center-align">Which package you would choose?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" value="Basic" type="radio"  />
+														<span>Basic</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" value="Standard" type="radio"  />
+														<span>Standard</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" type="radio" value="Premium"  />
+														<span>Premium</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" type="radio" value="Platinum"  />
+														<span>Platinum</span>
+													</label>
+												</p>
+												
+												
+												<button onclick="handleRadioClick()"  type="button" class="btn button">Continue</button>
+											</div>
+											<div class="second hide">
+												<h5 class="center-align">What will be the Weekly budget?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="£100 - £200" type="radio"  />
+														<span>£100 - £200</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="£200 - £350" type="radio"  />
+														<span>£200 - £350</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="£350 - £500" type="radio"  />
+														<span>£350 - £500</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="£500 - £750" type="radio"  />
+														<span>£500 - £750</span>
+													</label>
+												</p>
+												
+												
+												<button onclick="handlePrice()"  type="button" class="btn button">Continue</button>
+											</div>
+											<!-- <div class="second hide">
+												<h5 class="center-align">Which Vehicle need service?</h5>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="Car" />
+														<span>Car</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="4X4" />
+														<span>4X4</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="Jeep" />
+														<span>Jeep</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="Van or Light Commercial" />
+														<span>Van or Light Commercial</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="Shower" />
+														<span>Minibus</span>
+													</label>
+												</p>
+												
+												
+												 <button onclick="handleSecond()"  type="button" class="btn button">Continue</button> 
+												 
+											</div> -->
+											<!-- <div class="type hide">
+												<h5 class="center-align">In Which area?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="East London" />
+														<span>East London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="West London" />
+														<span>West London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="North London"  />
+														<span>North London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="East central London"  />
+														<span>East central London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="West central London"  />
+														<span>West central London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="North West London"  />
+														<span>North West London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="South West London & Surrey"  />
+														<span>South West London & Surrey</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="South East London & North Kent"  />
+														<span>South East London & North Kent</span>
+													</label>
+												</p>
+												<button onclick="handleType()"  type="button" class="btn button">Continue</button>
+												 
+											</div> -->
+											<div class="third hide">
+												<h5 class="center-align">When do you want to start?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="As soon as possible" />
+														<span>As soon as possible</span>
+													</label>
+												</p>
+												
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within this  week"  />
+														<span>Within this  week</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within the next week"  />
+														<span>Within the next week</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within this month"  />
+														<span>Within this month</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="I don't have a specific date in mind"  />
+														<span>I don't have a specific date in mind</span>
+													</label>
+												</p>  
+												<button onclick="handleThird()"  type="button" class="btn button">Continue</button>
+											</div>
+											<div class="fourth hide">
+												<h5 class="center-align">For how long you want to run the campaign?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="3-6 months" />
+														<span>3-6 months</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="6-12 months"  />
+														<span>6-12 months</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="12-18 months" />
+														<span>12-18 months</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="18-24 months" />
+														<span>18-24 months</span>
+													</label>
+												</p>
+												<button onclick="handleFourth()"  type="button" class="btn button">Continue</button>
+											</div>
+											<div class="last hide">
+													<h5>Fill up the form to complete this request</h5>
+												<div class="row">
+													
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Company Name: "
+																name="first-name"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="email"
+																class="form-control"
+																id="exampleInputEmail1"
+																placeholder="Email: "
+																aria-describedby="emailHelp"
+																name="email"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Phone: "
+																name="phone"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Postcode : "
+																name="postcode"
+															/>
+														</div>
+													</div>
+													<!-- <div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Vehicle Pick-up Postcode"
+																name="pick_post"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Vehicle Drop off Postcode"
+																name="drop_post"
+																required
+															/>
+														</div>
+													</div> -->
+													<div class="col-md-12">
+															<div class="form-group">
+																	<textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Tell us about your problem and expectation" rows="3" required></textarea>
+																</div>
+													</div>
+													
+												</div>
+												<button class="btn button">Submit </button>
+											</div>   
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn button" data-dismiss="modal">X</button>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="home" class="hero">
+				<div class="container-lg">
+					<div class="hero-text ">
+						<div class="container-lg">
+							<div class="row">
+								<div class="col-md-7">
+									<div class="heading ">
+										<h1>High Quality, Bespoke Lead Generation</h1>
+									</div>
+									<div class="sub-heading ">
+										<h5>We help you get the leads that you need to generate sales.
+											You choose the budget, no contracts & fully bespoke</h5>
+									</div>
+									<div class="hero-button">
+										<button type="button" class="btn button"  data-toggle="modal" data-target=".bd-example-modal-lg">Get Started</button>
+										<button  class="btn button button-second ml-5"  >How it works</button>
+									</div>
+								</div>
+								<!-- <div class="col-md-5 sm-hide">
+									<div class="shapes-wrapper ">
+										<div class="hero-shapes ">
+											<div class="hs-content">
+												<p><img src="./dist/img/mark.png" class="img-fluid" alt="form-icon"> <span class="hs-content-text">Submit Your Query </span> </p>
+												
+											</div>
+										</div>
+										<div class="hero-shapes">
+											<div class="hs-content">
+												<p><img src="./dist/img/mark.png" alt="form-icon"> <span class="hs-content-text">We'll find your desired car in less then 24 hours </span> </p>
+											</div>
+										</div>
+										<div class="hero-shapes">
+											<div class="hs-content">
+												<p><img src="./dist/img/mark.png" alt="form-icon"> <span class="hs-content-text">Pick your car up then return it when you're done </span> </p>
+											</div>
+										</div>
+									</div>
+								</div> -->
+							</div>
+						</div>
+
+						
+					</div>
+				</div>
+			</section>
+			<section id="why-us" class="why-us scrollspy">
+				<div class="container-md">
+					<div class="row">
+						<div class="col">
+							<div class="heading-content">
+								<div class="heading">
+									<h1>Why use us</h1>
+								</div>
+								<!-- <div class="sub-heading">
+									<h4>London Car Hire is an alternative to leasing, hiring or buying a car. We make finding and running your next car so much easier</h4>
+								</div> -->
+							</div>
+						</div>
+					</div>
+					<div class="wu-content-wrapper">
+						<div class="row align-items-center">
+							<div class="col-md-6">
+								<div class="wu-content">
+									<p>London PayPerCustomer specialises in gaining high quality leads for its wide range of customers operating in all industries. Every lead we generate for you is completely bespoke and qualified to give you the best chance of turning them into sales.</p>
+									<h4 class="sub-heading">A Blend Of Capability & Experience.</h4>
+									<p>We combine our innovative approach to generating leads with the experience of our Strategic Advisory Board. Their active involvement means that we can offer our clients a depth and breadth of insight into the best ways of helping their business grow their sales. Having access to this knowledge at all times is just one of the things that sets us apart from our competitors.</p>
+									
+								</div>
+							</div>
+							<div class="col-md-6 d-none d-md-block">
+								<div class="wu-content-image">
+									<img src="./dist/img/why-us.jpg" alt="what we do image" class="img-fluid">
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<section id="what-we-do" class="what-we-do scrollspy">
+				<div class="container-md">
+					<div class="row">
+						<div class="col">
+							<div class="heading-content">
+								<div class="heading">
+									<h1>What we do</h1>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="wwd-content-wrapper">
+						<div class="row ">
+							<div class="col">
+								<div class="wwd-content">
+									<p>Our whole process of generating leads (and ultimately sales) for every customer is completely different to any competitor we have found to date. We generate leads using fully bespoke landing pages, that we advertise on Google to make sure you are the top of the rankings for the searches that actually generate your business sales</p>
+									<p>As far as we are concerned, if we were to give you 500 leads but none of them convert, it is a complete waste of time. However, for some reason, this is exactly what every other lead generation company seems to do right now!</p>
+									<p>Every lead we provide is bespoke to your business – we do not sell the same lead multiple times as all that does is put you into a price bidding war with your competitors!</p>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<section id="what-we-do-dif" class="what-we-do-dif scrollspy">
+				<div class="container-md">
+					<div class="row">
+						<div class="col">
+							<div class="heading-content">
+								<div class="heading">
+									<h1>What do we do differently?</h1>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="wwdd-content-wrapper">
+						<div class="row ">
+							<div class="col">
+								<div class="wwdd-content">
+									<ul>
+										<li>We only generate BESPOKE leads</li>
+										<li>We will provide you with the direct line & email of a dedicated Account Manager</li>
+										<li>We will work on any budget – you decide!</li>
+										<li>We do everything within your budget (there are no extra suprise charges) – building landing pages, building & running Google Ads, optimisation, A/B testing & conversion tracking.</li>
+										<li>The landing pages & ads are fully custom-built around your business, ensuring that the quality of all the leads we generate you are a high quality</li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<section id="process" class="process">
+				<div class="container">
+					<div class="heading">
+						<h1>Our Process</h1>
+					</div>
+					<!--first section-->
+					<div class="row align-items-center how-it-works">
+						<div class="col-2 text-center bottom">
+							<div class="circle">1</div>
+						</div>
+						<div class="col-7">
+							<h5>Strategise</h5>
+							<p>This is where it all starts – and it is arguably the most important part of the process. We will begin by organising an onboarding call where we will ask you questions about your business in order to be sure we are getting your campaign off to the best start. The questions will be based around what you are trying to sell, the sorts of customers you are looking for and the location(s) you want to target.</p>
+						</div>
+					</div>
+					<!--path between 1-2-->
+					<div class="row timeline">
+						<div class="col-2">
+							<div class="corner top-right"></div>
+						</div>
+						<div class="col-8">
+							<hr/>
+						</div>
+						<div class="col-2">
+							<div class="corner left-bottom"></div>
+						</div>
+					</div>
+					<!--second section-->
+					<div class="row align-items-center justify-content-end how-it-works">
+						<div class="col-7 text-right">
+							<h5>Landing Page</h5>
+							<p>Following on from the onboarding call, we will then proceed to build the landing page needed to make your campaign as successful as we can. One of the team will build you a fully custom built landing page, with multiple variants based on the answers you gave on the onboarding call. We will also use everything that we have learnt from the landing pages we have built for other campaigns in your sector to increase your chance of conversion!</p>
+						</div>
+						<div class="col-2 text-center full">
+							<div class="circle">2</div>
+						</div>
+					</div>
+					<!--path between 2-3-->
+					<div class="row timeline">
+						<div class="col-2">
+							<div class="corner right-bottom"></div>
+						</div>
+						<div class="col-8">
+							<hr/>
+						</div>
+						<div class="col-2">
+							<div class="corner top-left"></div>
+						</div>
+					</div>
+					<!--third section-->
+					<div class="row align-items-center how-it-works">
+						<div class="col-2 text-center full new-full">
+							<div class="circle">3</div>
+						</div>
+						<div class="col-7">
+							<h5>Ad Build</h5>
+							<p>Based on every step so far, one of our ad specialists will build you a bespoke ad campaign. This campaign will target your chosen demographic, locations and keywords. We will set up multiple variants and use the advanced tools and technologies we have access to. The ads and keywords will be split tested to enable optimisation once the campaign is running.</p>
+						</div>
+					</div>
+					<!--path between 3-4-->
+					<div class="row timeline">
+						<div class="col-2">
+							<div class="corner top-right"></div>
+						</div>
+						<div class="col-8">
+							<hr/>
+						</div>
+						<div class="col-2">
+							<div class="corner left-bottom"></div>
+						</div>
+					</div>
+					<!--fourth section-->
+					<div class="row align-items-center justify-content-end how-it-works">
+						<div class="col-7 text-right">
+							<h5> Optimise</h5>
+							<p>Once the campaign is live we will continue to optimise the campaign as things progress. This will enable us to continue improving the ROI of your campaign because we will be able to only run the ads against the keywords and variants we know work. If done right, this will increase the number of leads you get without the need to increase your ad spend – how good is that!</p>
+						</div>
+						<div class="col-2 text-center top">
+							<div class="circle">4</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</section>
+			<section class="experience">
+				<div class="container-md">
+					<div class="row">
+						<div class="col">
+							<div class="heading">
+								<h1>Our Experience</h1>
+							</div>
+							<div class="sub-heading">
+								<h5>One thing that is unique about us is that we can generate leads for all types of businesses whatever the budget. We can scale our team and methods around your requirements very easily</h5>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="ec-heading">
+								<h5>Some of the industries we operate in:</h5>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="ec-iconbox text-center">
+								<div class="ec-icon-holder">
+									<img src="./dist/img/experiece-icon.png" alt="Icon">
+								</div>
+								<div class="ec-icon-heading">
+									<h5>Software & technoloy</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="ec-iconbox text-center">
+								<div class="ec-icon-holder">
+									<img src="./dist/img/experiece-icon1.png" alt="Icon">
+								</div>
+								<div class="ec-icon-heading">
+									<h5>Retail & Distribution</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="ec-iconbox text-center">
+								<div class="ec-icon-holder">
+									<img src="./dist/img/experiece-icon2.png" alt="Icon">
+								</div>
+								<div class="ec-icon-heading">
+									<h5>Travel & hospitality</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="ec-iconbox text-center">
+								<div class="ec-icon-holder">
+									<img src="./dist/img/experiece-icon3.png" alt="Icon">
+								</div>
+								<div class="ec-icon-heading">
+									<h5>Banking & finance</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="ec-iconbox text-center">
+								<div class="ec-icon-holder">
+									<img src="./dist/img/experiece-icon4.png" alt="Icon">
+								</div>
+								<div class="ec-icon-heading">
+									<h5>business Services</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="ec-iconbox text-center">
+								<div class="ec-icon-holder">
+									<img src="./dist/img/experiece-icon5.png" alt="Icon">
+								</div>
+								<div class="ec-icon-heading">
+									<h5>health & fitness</h5>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="contact scrollspy" >
+				<div class="container-md">
+					<div class="row">
+						<div class="col">
+							<div class="heading">
+								<h1 class=" text-uppercase">Contact Us</h1>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-6">
+							<div class="contact-form">
+								<form action="./dist/php/contact.php" method="POST">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Company Name: "
+													name="name"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="email"
+													class="form-control"
+													id="exampleInputEmail1"
+													placeholder="Email: "
+													aria-describedby="emailHelp"
+													name="email"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Phone: "
+													name="phone"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Postcode: "
+													name="postcode"
+													required
+												/>
+											</div>
+										</div>
+										<!-- <div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Pick-up Postcode"
+													name="pick-post"
+													required
+												/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Drop off Postcode"
+													name="drop-post"
+													required
+												/>
+											</div>
+										</div> -->
+										<div class="col-md-12">
+												<div class="form-group">
+														<textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tell us your Problem and expectation" rows="3" name="message" required></textarea>
+													</div>
+										</div>
+										
+									</div>
+
+
+									<button type="submit" class="btn button">Submit</button>
+								</form>
+							</div>
+						</div>
+						<div class="offset-sm-1 col-sm-5 col-md-5">
+							<div class="contact-box ">
+								<h3 class="">
+									 <small>For a prompt response</small>  <br />
+									contact us now
+								</h3>
+								<p>
+									<img src="./dist/img/phone.png" alt="Contact phone number" />
+									<span><a href="tel:020 8088 3646">020 8088 3646 </a></span>
+								</p>
+								<p>
+									<img src="./dist/img/email.png" alt="Contact phone number" />
+									<span>support@london-ppc.co.uk</span>
+								</p>
+								<p>
+									<img src="./dist/img/location.png" alt="Contact phone number" />
+									<span>Kemp House, 160 City Road, London, United Kingdom, EC1V 2NX</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="sticky-mobile d-sm-block d-md-none">
+					<div class="container">
+						<div class="row">
+							<div class="col">
+									<p class="center-align"><img src="./dist/img/call-white.png" alt="Contact">  <a class="" href="tel:020 8088 3646">020 8088 3646</a></p>
+							</div>
+						</div>
+					</div>
+				</section>
+			<section class="footer d-none d-md-block">
+				<div class="container-md">
+					<p class="copy text-center">Copyright © 2020 LONDON PayPerCustomer. All rights reserved.</p>
+					<p class=" text-center"><a href="./privacy-policy.html">Privacy Policy</a></p>
+				</div>
+			</section>
+		</div>
+
+		<!-- bootstrap js CDN -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./dist/js/app.js"></script>
+	</body>
+</html>

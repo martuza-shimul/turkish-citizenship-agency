@@ -1,0 +1,31 @@
+.page-header {
+	height: 60vh;
+	padding: 15vh 0;
+	background: linear-gradient(
+			rgba($primary-color, 0.6),
+			rgba($secondary-color, 0.8)
+		),
+		url("../img/hero4.jpg") no-repeat bottom;
+
+	background-size: cover;
+	// background-position: 300px -100px;
+	// background-attachment: fixed;
+	background-blend-mode: multiply;
+	.ph-text {
+		// background: $secon-color;
+		.ph-title {
+			text-transform: capitalize;
+
+			padding: 5vh 0;
+
+			color: $white;
+			h1 {
+				// background: rgba($primary-color, 0.6);
+				font-weight: 900;
+				font-size: 2.3rem;
+				border-radius: 5rem;
+				// padding: 2vh 0;
+			}
+		}
+	}
+}

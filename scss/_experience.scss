@@ -1,0 +1,31 @@
+.experience {
+	padding: 10vh 0;
+	background: $background;
+	.sub-heading,
+	.ec-heading {
+		color: lighten($text-color, 25);
+		padding-bottom: 2rem;
+		h5 {
+			font-size: 1.4rem;
+			line-height: 2.3rem;
+			font-weight: 700;
+		}
+	}
+	.ec-heading {
+		color: $text-color;
+	}
+	.ec-iconbox {
+		padding: 1rem 0;
+		.ec-icon-holder {
+			margin: 0.5rem 0;
+		}
+		.ec-icon-heading {
+			color: $primary-color;
+			h5 {
+				font-size: 1.2rem;
+				line-height: 2rem;
+				font-weight: 700;
+			}
+		}
+	}
+}
