@@ -27,7 +27,7 @@
 
 				&:hover {
 					// background: rgba($primary-color, 0.5);
-					background: lighten($text-rev, 5);
+					background: lighten($text-color, 5);
 				}
 			}
 			.button {
@@ -51,6 +51,11 @@
 			.nav-item {
 				.nav-link {
 					color: $primary-color;
+
+					&:hover {
+						// background: rgba($primary-color, 0.5);
+						background: lighten($text-rev, 5);
+					}
 				}
 				.button {
 					color: $text-rev;

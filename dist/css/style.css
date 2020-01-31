@@ -115,7 +115,7 @@
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  background: white;
+  background: #28343d;
 }
 
 .navbar .navbar-nav .nav-item .button {
@@ -137,6 +137,10 @@
 
 .navbar.scrolled .navbar-nav .nav-item .nav-link {
   color: #e30a17;
+}
+
+.navbar.scrolled .navbar-nav .nav-item .nav-link:hover {
+  background: white;
 }
 
 .navbar.scrolled .navbar-nav .nav-item .button {
@@ -179,7 +183,11 @@
 }
 
 .hero .hero-text .hero-text-content {
-  padding-left: 5%;
+  padding-left: 8%;
+}
+
+.hero .hero-text .heading {
+  margin-left: 5%;
 }
 
 .hero .hero-text .heading h1 {
@@ -198,8 +206,8 @@
 }
 
 .hero .hero-text .sub-heading h5 {
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
   font-weight: 600;
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif;
@@ -746,12 +754,42 @@
   font-weight: 900;
 }
 
+@media screen and (max-width: 1199px) {
+  .hero .hero-text .hero-text-content {
+    padding-left: 10%;
+  }
+  .hero .hero-text .heading h1 {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+  .hero .hero-text .sub-heading {
+    margin-left: 20%;
+  }
+  .hero .hero-text .sub-heading h5 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .heading h1 {
     font-size: 2.4rem;
   }
+  .hero .hero-text .hero-text-content {
+    padding-left: 10%;
+  }
   .hero .hero-text .heading h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .hero .hero-text .sub-heading {
+    margin-left: 20%;
+  }
+  .hero .hero-text .sub-heading h5 {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    font-weight: 500;
   }
   .hero-shapes .hs-content .hs-content-text {
     font-size: 1rem;
@@ -801,6 +839,24 @@
   .heading h1 {
     font-size: 2rem;
     font-weight: 900;
+  }
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 39, 46, 0.7)), to(rgba(227, 10, 23, 0.8))), url("../img/main-hero.jpg") no-repeat center;
+    background: linear-gradient(rgba(30, 39, 46, 0.7), rgba(227, 10, 23, 0.8)), url("../img/main-hero.jpg") no-repeat center;
+  }
+  .hero .hero-text {
+    background: transparent;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .hero .hero-text .heading h1 {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+  .hero .hero-text .sub-heading h5 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 500;
   }
   .about .image-holder {
     margin: 25% 0 0 0;
@@ -857,16 +913,27 @@
     font-size: 1.7rem;
     font-weight: 900;
   }
+  .hero .hero-text {
+    padding-top: 15vh;
+    text-align: left;
+  }
+  .hero .hero-text .hero-text-content {
+    padding-left: 1%;
+    text-align: left;
+  }
+  .hero .hero-text .heading {
+    margin-left: 1%;
+  }
   .hero .hero-text .heading h1 {
+    text-align: left;
     font-size: 1.4rem;
+    line-height: 1.7rem;
   }
-  .hero .hero-text .content h3 {
-    font-size: 1.3rem;
-    font-weight: 500;
+  .hero .hero-text .sub-heading {
+    display: none;
   }
-  .hero .hero-text .content p {
-    font-size: 1.1rem;
-    font-weight: 400;
+  .hero .hero-text .button-second {
+    display: none;
   }
   .about .image-holder {
     margin: 5% 2%;
