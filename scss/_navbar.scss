@@ -37,8 +37,8 @@
 				font-weight: 900;
 				text-transform: capitalize;
 				&:hover {
-					background: $secondary-color;
-					color: $white;
+					background: transparent;
+					color: $text-color;
 					border: 1px solid $white;
 				}
 			}

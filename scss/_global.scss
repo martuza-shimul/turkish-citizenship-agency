@@ -25,7 +25,7 @@
 	font-weight: 600;
 	border: 1px solid $primary-color;
 	border-radius: 2rem;
-	box-shadow: 3px 0px 8px 2px $shad;
+
 	text-transform: capitalize;
 	// clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 	// clip-path: polygon(
@@ -41,6 +41,9 @@
 		background: $secondary-color;
 		color: $text-color;
 		border: 1px solid $secondary-color;
+		// box-shadow: 3px 0px 8px 2px $shad;
+		box-shadow: rgba($shad, 0.5) 0px 10px 10px -10px;
+		transform: scale(1.01);
 		transition: 0.6s ease-in;
 		z-index: 3;
 	}
