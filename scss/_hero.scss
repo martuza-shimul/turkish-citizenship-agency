@@ -1,6 +1,6 @@
 .hero {
 	height: 100vh;
-	background: linear-gradient(rgba($primary-color, 0.7)),
+	background: linear-gradient(rgba($text-color, 0.4), rgba($primary-color, 0.2)),
 		url("../img/main-hero.jpg") no-repeat bottom;
 	background-size: cover;
 	background-attachment: fixed;
@@ -54,24 +54,24 @@
 				letter-spacing: 1px;
 				background: $primary-color;
 				color: $text-rev;
-				border: 1px solid $primary-color;
+				border-color: $primary-color;
 				font-weight: 900;
 				&:hover {
 					background: $secondary-color;
 					color: $white;
-					border: 1px solid $white;
+					border-color: $white;
 				}
 			}
 			.button-second {
 				background: $white;
 				// box-shadow: 3px 0px 4px 0px $shad;
-				border: 1px solid $primary-color;
+				border-color: $primary-color;
 				color: $primary-color;
 
 				&:hover {
 					background: $primary-color;
 					color: $white;
-					border: 1px solid $white;
+					border-color: $white;
 				}
 			}
 		}

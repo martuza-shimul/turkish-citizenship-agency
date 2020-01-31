@@ -15,6 +15,7 @@
 	}
 	.navbar-nav {
 		.nav-item {
+			padding: 0rem 0.5rem;
 			.nav-link {
 				color: $text-rev;
 				padding: 0.5rem 1rem;
@@ -26,20 +27,20 @@
 
 				&:hover {
 					// background: rgba($primary-color, 0.5);
-					background: lighten($primary-color, 5);
+					background: lighten($text-rev, 5);
 				}
 			}
 			.button {
-				letter-spacing: 1px;
-				background: $primary-color;
-				color: $text-rev;
+				// letter-spacing: 1px;
+				// background: $primary-color;
+				// color: $text-rev;
 				border: 1px solid $primary-color;
-				font-weight: 900;
-				text-transform: capitalize;
+				border-radius: 0;
+
 				&:hover {
 					background: transparent;
 					color: $text-color;
-					border: 1px solid $white;
+					border: 1px solid $text-color;
 				}
 			}
 		}
@@ -47,14 +48,17 @@
 
 	&.scrolled {
 		height: 65px;
-		background: rgba($secondary-color, 0.8);
+		background: rgba($text-rev, 0.9);
 		.navbar-nav {
 			.nav-item {
 				.nav-link {
-					color: $text-rev;
+					color: $primary-color;
 				}
 				.button {
 					color: $text-rev;
+					&:hover {
+						color: $text-color;
+					}
 				}
 			}
 		}

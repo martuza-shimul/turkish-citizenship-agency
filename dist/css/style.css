@@ -16,23 +16,24 @@
 .button {
   background: #e30a17;
   color: #f2f2f2;
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-weight: 600;
-  border: 1px solid #e30a17;
-  border-radius: 2rem;
+  border: 1.5px solid #e30a17;
+  border-radius: 0px;
+  letter-spacing: 1px;
   text-transform: capitalize;
 }
 
 .button:hover {
   background: #379683;
   color: #1e272e;
-  border: 1px solid #379683;
+  border-color: #379683;
   -webkit-box-shadow: rgba(128, 142, 155, 0.5) 0px 10px 10px -10px;
           box-shadow: rgba(128, 142, 155, 0.5) 0px 10px 10px -10px;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
-  -webkit-transition: 0.6s ease-in;
-  transition: 0.6s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
   z-index: 3;
 }
 
@@ -99,6 +100,10 @@
   color: #fff;
 }
 
+.navbar .navbar-nav .nav-item {
+  padding: 0rem 0.5rem;
+}
+
 .navbar .navbar-nav .nav-item .nav-link {
   color: #f2f2f2;
   padding: 0.5rem 1rem;
@@ -110,35 +115,35 @@
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  background: #f51220;
+  background: white;
 }
 
 .navbar .navbar-nav .nav-item .button {
-  letter-spacing: 1px;
-  background: #e30a17;
-  color: #f2f2f2;
   border: 1px solid #e30a17;
-  font-weight: 900;
-  text-transform: capitalize;
+  border-radius: 0;
 }
 
 .navbar .navbar-nav .nav-item .button:hover {
   background: transparent;
   color: #1e272e;
-  border: 1px solid #fff;
+  border: 1px solid #1e272e;
 }
 
 .navbar.scrolled {
   height: 65px;
-  background: rgba(55, 150, 131, 0.8);
+  background: rgba(242, 242, 242, 0.9);
 }
 
 .navbar.scrolled .navbar-nav .nav-item .nav-link {
-  color: #f2f2f2;
+  color: #e30a17;
 }
 
 .navbar.scrolled .navbar-nav .nav-item .button {
   color: #f2f2f2;
+}
+
+.navbar.scrolled .navbar-nav .nav-item .button:hover {
+  color: #1e272e;
 }
 
 .quote-engine-wrapper h5 {
@@ -155,8 +160,8 @@
 
 .hero {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 10, 23, 0.7))), url("../img/main-hero.jpg") no-repeat bottom;
-  background: linear-gradient(rgba(227, 10, 23, 0.7)), url("../img/main-hero.jpg") no-repeat bottom;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 39, 46, 0.4)), to(rgba(227, 10, 23, 0.2))), url("../img/main-hero.jpg") no-repeat bottom;
+  background: linear-gradient(rgba(30, 39, 46, 0.4), rgba(227, 10, 23, 0.2)), url("../img/main-hero.jpg") no-repeat bottom;
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
@@ -203,26 +208,26 @@
   letter-spacing: 1px;
   background: #e30a17;
   color: #f2f2f2;
-  border: 1px solid #e30a17;
+  border-color: #e30a17;
   font-weight: 900;
 }
 
 .hero .hero-text .hero-button .button:hover {
   background: #379683;
   color: #fff;
-  border: 1px solid #fff;
+  border-color: #fff;
 }
 
 .hero .hero-text .hero-button .button-second {
   background: #fff;
-  border: 1px solid #e30a17;
+  border-color: #e30a17;
   color: #e30a17;
 }
 
 .hero .hero-text .hero-button .button-second:hover {
   background: #e30a17;
   color: #fff;
-  border: 1px solid #fff;
+  border-color: #fff;
 }
 
 .hero::after {
@@ -928,7 +933,7 @@ body {
 }
 
 .navbar-nav .active {
-  background: #f51220;
+  background: white;
 }
 
 ::-moz-selection {
