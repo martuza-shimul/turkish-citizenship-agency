@@ -169,7 +169,7 @@
 
 .hero {
   height: 100vh;
-  background: url("../img/main-hero.jpg") no-repeat top;
+  background: url("../img/main-hero.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
@@ -1001,12 +1001,12 @@ body {
 
 ::-moz-selection {
   color: #f2f2f2;
-  background: #e30a17;
+  background: #1e272e;
 }
 
 ::selection {
   color: #f2f2f2;
-  background: #e30a17;
+  background: #1e272e;
 }
 
 .light {
