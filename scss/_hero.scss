@@ -1,65 +1,61 @@
 .hero {
 	height: 100vh;
-	background: linear-gradient(rgba($text-color, 0.4), rgba($primary-color, 0.2)),
-		url("../img/main-hero.jpg") no-repeat bottom;
+	// background: linear-gradient(rgba($text-color, 0.4), rgba($primary-color, 0.2)),
+	// 	url("../img/main-hero.jpg") no-repeat bottom;
+	background: url("../img/main-hero.jpg") no-repeat bottom;
 	background-size: cover;
 	background-attachment: fixed;
 	background-blend-mode: multiply;
-	// perspective: 2px;
-	// overflow-y: auto;
+	// padding: 5vh 0;
 	position: relative;
-	padding: 10vh 0;
+	// display: flex;
 	color: $text-color;
-	// clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 95%, 0% 100%);
-	// clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 
 	.hero-text {
-		// background: rgba($text-color, 0.4);
-		padding: 10vh 0;
-		position: relative;
-		// border-radius: 0 10rem 10rem 0;
-		// display: inline-block;
-
-		// margin: 0 auto;
+		padding: 20vh 0 10vh 0;
+		margin-right: -15px;
+		background: rgba($primary-color, 0.7);
+		// flex: 1;
+		height: 100%;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
+		.hero-text-content {
+			padding-left: 5%;
+		}
 		.heading {
-			// margin-top: 10vh;
-			padding: 5vh 2vh 2vh 2vh;
-			// background: rgba($background, 0.4);
-			// clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-			border-radius: 5rem;
+			// padding: 5vh 2vh 2vh 2vh;
+			// text-align: right;
+
 			h1 {
 				color: $white;
-				font-size: 2.6rem;
-				font-weight: 900;
-				text-align: left;
+				font-size: 1.9rem;
+				line-height: 2.6rem;
+				font-weight: 700;
+				text-transform: capitalize;
 				letter-spacing: 2px;
+				// text-align: right;
 			}
 		}
 		.sub-heading {
-			// color: lighten($text-color, 70);
-			// color: $card-back;
+			margin-left: 15%;
 			color: $text-rev;
-			padding: 1vh 2vh 5vh 2vh;
+			padding: 1vh 0;
 			h5 {
-				font-size: 1.6rem;
-				font-weight: 500;
+				font-size: 1.3rem;
+				line-height: 2rem;
+				font-weight: 600;
 				letter-spacing: 1px;
-				font-family: "Josefin Sans", sans-serif;
+				// font-family: "Josefin Sans", sans-serif;
+				font-family: "Montserrat", sans-serif;
 			}
 		}
 		.hero-button {
 			// margin-top: 5rem;
 			padding: 2vh;
 			.button {
-				letter-spacing: 1px;
-				background: $primary-color;
-				color: $text-rev;
-				border-color: $primary-color;
-				font-weight: 900;
 				&:hover {
-					background: $secondary-color;
-					color: $white;
-					border-color: $white;
+					background: $white;
+					color: $text-color;
+					border-color: $text-color;
 				}
 			}
 			.button-second {
@@ -75,47 +71,18 @@
 				}
 			}
 		}
-		// .content {
-		// 	h3 {
-		// 		font-weight: 600;
-		// 		color: $text-rev;
-		// 	}
-		// 	p {
-		// 		font-size: 1.4rem;
-		// 		font-weight: 500;
-		// 		text-transform: capitalize;
-		// 		color: $text-rev;
-		// 	}
-		// }
 	}
 
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		border-bottom: 100px solid $secondary-color;
-		clip-path: polygon(12% 95%, 0% 100%, 100% 100%);
-		// clip-path: polygon(50% 100%, 0 94%, 100% 94%);
-		// clip-path: polygon(0% 100%, 0% 93%, 50% 100%, 100% 93%, 100% 100%);
-		// clip-path: polygon(
-		// 	0% 100%,
-		// 	7% 95%,
-		// 	15% 95%,
-		// 	28% 94%,
-		// 	33% 100%,
-		// 	35% 100%,
-		// 	49% 93%,
-		// 	61% 81%,
-		// 	73% 79%,
-		// 	83% 81%,
-		// 	94% 84%,
-		// 	99% 87%,
-		// 	100% 100%
-		// );
-		// clip-path: circle(7.2% at 98% 100%);
-	}
+	// &::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	border-bottom: 100px solid $secondary-color;
+	// 	clip-path: polygon(12% 95%, 0% 100%, 100% 100%);
+
+	// }
 }
 .hero-shapes {
 	position: relative;
