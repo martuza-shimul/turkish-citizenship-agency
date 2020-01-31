@@ -2,7 +2,7 @@
 	height: 100vh;
 	// background: linear-gradient(rgba($text-color, 0.4), rgba($primary-color, 0.2)),
 	// 	url("../img/main-hero.jpg") no-repeat bottom;
-	background: url("../img/main-hero.jpg") no-repeat bottom;
+	background: url("../img/main-hero.jpg") no-repeat top;
 	background-size: cover;
 	background-attachment: fixed;
 	background-blend-mode: multiply;
@@ -51,22 +51,25 @@
 			// margin-top: 5rem;
 			padding: 2vh;
 			.button {
+				background: $white;
+				color: $primary-color;
+				border-color: $white;
 				&:hover {
-					background: $white;
+					background: $secondary-color;
 					color: $text-color;
-					border-color: $text-color;
+					border-color: $secondary-color;
 				}
 			}
 			.button-second {
-				background: $white;
+				background: $text-color;
 				// box-shadow: 3px 0px 4px 0px $shad;
-				border-color: $primary-color;
-				color: $primary-color;
+				border-color: $text-color;
+				color: $white;
 
 				&:hover {
-					background: $primary-color;
-					color: $white;
-					border-color: $white;
+					background: $secondary-color;
+					color: $text-color;
+					border-color: $secondary-color;
 				}
 			}
 		}

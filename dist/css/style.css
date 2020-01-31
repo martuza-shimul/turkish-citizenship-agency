@@ -27,11 +27,9 @@
 .button:hover {
   background: transparent;
   color: #1e272e;
-  border-color: #1e272e;
+  border: 1px solid #1e272e;
   -webkit-box-shadow: rgba(30, 39, 46, 0.5) 0px 10px 10px -10px;
           box-shadow: rgba(30, 39, 46, 0.5) 0px 10px 10px -10px;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
   z-index: 3;
@@ -120,7 +118,9 @@
 
 .navbar .navbar-nav .nav-item .button {
   padding: 0.5rem 1rem;
-  border: 1px solid #e30a17;
+  background: #fff;
+  color: #e30a17;
+  border: 1px solid #fff;
   border-radius: 0;
 }
 
@@ -144,11 +144,15 @@
 }
 
 .navbar.scrolled .navbar-nav .nav-item .button {
-  color: #f2f2f2;
+  background: #e30a17;
+  color: #fff;
+  border: 1px solid #e30a17;
 }
 
 .navbar.scrolled .navbar-nav .nav-item .button:hover {
   color: #1e272e;
+  background: transparent;
+  border: 1px solid #1e272e;
 }
 
 .quote-engine-wrapper h5 {
@@ -160,12 +164,12 @@
 
 .modal-footer {
   padding: 0.3rem;
-  background: #379683;
+  background: #40e0d0;
 }
 
 .hero {
   height: 100vh;
-  background: url("../img/main-hero.jpg") no-repeat bottom;
+  background: url("../img/main-hero.jpg") no-repeat top;
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
@@ -217,22 +221,28 @@
   padding: 2vh;
 }
 
-.hero .hero-text .hero-button .button:hover {
+.hero .hero-text .hero-button .button {
   background: #fff;
+  color: #e30a17;
+  border-color: #fff;
+}
+
+.hero .hero-text .hero-button .button:hover {
+  background: #40e0d0;
   color: #1e272e;
-  border-color: #1e272e;
+  border-color: #40e0d0;
 }
 
 .hero .hero-text .hero-button .button-second {
-  background: #fff;
-  border-color: #e30a17;
-  color: #e30a17;
+  background: #1e272e;
+  border-color: #1e272e;
+  color: #fff;
 }
 
 .hero .hero-text .hero-button .button-second:hover {
-  background: #e30a17;
-  color: #fff;
-  border-color: #fff;
+  background: #40e0d0;
+  color: #1e272e;
+  border-color: #40e0d0;
 }
 
 .hero-shapes {
@@ -281,7 +291,7 @@
 }
 
 .what-is {
-  background: #379683;
+  background: #40e0d0;
   padding: 5vh 0;
 }
 
@@ -364,7 +374,7 @@
 }
 
 .why-us {
-  background: #379683;
+  background: #40e0d0;
   padding: 8vh 0;
   color: #f2f2f2;
 }
@@ -418,7 +428,7 @@
   font-weight: bold;
   padding: 15px 20px;
   border-radius: 50%;
-  background-color: #379683;
+  background-color: #40e0d0;
   color: #f2f2f2;
   max-height: 50px;
   z-index: 2;
@@ -462,7 +472,7 @@
 .how-it-works.row .col-2::after {
   content: "";
   position: absolute;
-  border-left: 3px solid #379683;
+  border-left: 3px solid #40e0d0;
   z-index: 1;
 }
 
@@ -494,7 +504,7 @@
 }
 
 .timeline hr {
-  border-top: 3px solid #379683;
+  border-top: 3px solid #40e0d0;
   margin: 0;
   top: 17px;
   position: relative;
@@ -508,7 +518,7 @@
 }
 
 .timeline .corner {
-  border: 3px solid #379683;
+  border: 3px solid #40e0d0;
   width: 100%;
   position: relative;
   border-radius: 15px;
@@ -617,7 +627,7 @@
 }
 
 .contact .contact-form .button:hover {
-  background: #379683;
+  background: #40e0d0;
   color: #f2f2f2;
   border-color: #fff;
   -webkit-transform: scale(1.03, 1.03);
@@ -659,11 +669,11 @@
 
 .area-cover .tabs .indicator {
   height: 3px;
-  background-color: #379683;
+  background-color: #40e0d0;
 }
 
 .sticky-mobile {
-  background: #379683;
+  background: #40e0d0;
   color: #f2f2f2;
   width: 100vw;
   max-height: 53px;
@@ -702,7 +712,7 @@
 }
 
 .footer {
-  background: #379683;
+  background: #40e0d0;
   color: #f2f2f2;
   font-size: 0.8rem;
   font-weight: 500;
@@ -720,8 +730,8 @@
 .page-header {
   height: 60vh;
   padding: 15vh 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 10, 23, 0.6)), to(rgba(55, 150, 131, 0.8))), url("../img/hero4.jpg") no-repeat bottom;
-  background: linear-gradient(rgba(227, 10, 23, 0.6), rgba(55, 150, 131, 0.8)), url("../img/hero4.jpg") no-repeat bottom;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 10, 23, 0.6)), to(rgba(64, 224, 208, 0.8))), url("../img/hero4.jpg") no-repeat bottom;
+  background: linear-gradient(rgba(227, 10, 23, 0.6), rgba(64, 224, 208, 0.8)), url("../img/hero4.jpg") no-repeat bottom;
   background-size: cover;
   background-blend-mode: multiply;
 }
@@ -885,7 +895,7 @@
     font-weight: 600;
   }
   .services::after {
-    border-bottom: 100px solid #379683;
+    border-bottom: 100px solid #40e0d0;
     -webkit-clip-path: polygon(0% 100%, 0% 96%, 100% 100%);
             clip-path: polygon(0% 100%, 0% 96%, 100% 100%);
   }
@@ -950,7 +960,7 @@
     padding: 0 4%;
   }
   .services::after {
-    border-bottom: 80px solid #379683;
+    border-bottom: 80px solid #40e0d0;
     -webkit-clip-path: polygon(0% 100%, 0% 98%, 100% 100%);
             clip-path: polygon(0% 100%, 0% 98%, 100% 100%);
   }
