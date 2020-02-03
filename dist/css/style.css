@@ -374,7 +374,7 @@
 }
 
 .why-us {
-  background: #f2f2f2;
+  background: #fff;
   padding: 8vh 0;
   color: #1e272e;
 }
@@ -394,13 +394,37 @@
   letter-spacing: 1px;
 }
 
-.why-us .wu-content-image {
-  border-radius: 0.5rem;
+.wu-content-image {
   padding: 1rem;
-  background: #f2f2f2;
+  background: #e30a17;
 }
 
-.what-we-do,
+.what-we-do {
+  background: linear-gradient(109.6deg, #1e272e 11.2%, #e30a17 81.1%), url("../img/hero1.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  color: #fff;
+  padding: 15vh 0;
+}
+
+.what-we-do .heading h1 {
+  color: #fff;
+}
+
+.what-we-do .wwd-content-block {
+  padding: 1.5rem 0.5rem;
+}
+
+.what-we-do .wwd-content-block h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 2.1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
 .what-we-do-dif {
   padding: 10vh 0;
   font-size: 1.1rem;
@@ -410,14 +434,6 @@
 .what-we-do-dif {
   background: #d2dae2;
   padding: 5vh 0;
-}
-
-.what-we-do-dif .wwdd-content-wrapper {
-  margin-left: 1.5rem;
-}
-
-.what-we-do-dif .wwdd-content-wrapper ul li {
-  line-height: 2rem;
 }
 
 .process {
@@ -575,17 +591,17 @@
 }
 
 .ec-iconbox .ec-icon-heading {
-  color: #e30a17;
+  color: #1e272e;
 }
 
 .ec-iconbox .ec-icon-heading h5 {
   font-size: 1.2rem;
-  line-height: 2rem;
+  line-height: 1.7rem;
   font-weight: 700;
 }
 
 .ec-iconbox .ec-icon-text p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.3rem;
   font-weight: 400;
 }

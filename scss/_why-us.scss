@@ -1,5 +1,5 @@
 .why-us {
-	background: $text-rev;
+	background: $white;
 	padding: 8vh 0;
 	color: $text-color;
 
@@ -21,11 +21,11 @@
 			}
 		}
 	}
-	.wu-content-image {
-		// border: 1px solid $shad;
-		border-radius: 0.5rem;
-		padding: 1rem;
-		// background: lighten($primary-color, 5);
-		background: $text-rev;
-	}
+}
+.wu-content-image {
+	// border: 1px solid $shad;
+	// border-radius: 0.5rem;
+	padding: 1rem;
+	// background: lighten($primary-color, 5);
+	background: $primary-color;
 }

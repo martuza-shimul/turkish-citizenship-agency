@@ -1,4 +1,34 @@
-.what-we-do,
+.what-we-do {
+	background: linear-gradient(
+			109.6deg,
+			rgba($text-color, 1) 11.2%,
+			rgba($primary-color, 1) 81.1%
+		),
+		url("../img/hero1.jpg") no-repeat center;
+	// background-image: linear-gradient( 109.6deg,  rgba(14,11,56,1) 11.2%, rgba(239,37,37,1) 91.1% );
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+	color: $white;
+	padding: 15vh 0;
+	.heading {
+		h1 {
+			color: $white;
+		}
+	}
+	.wwd-content-block {
+		padding: 1.5rem 0.5rem;
+		h5 {
+			font-size: 1.3rem;
+			font-weight: 600;
+			letter-spacing: 2px;
+			line-height: 2.1rem;
+			text-transform: uppercase;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
 .what-we-do-dif {
 	padding: 10vh 0;
 	font-size: 1.1rem;
@@ -17,12 +47,4 @@
 	// 		color: $white;
 	// 	}
 	// }
-	.wwdd-content-wrapper {
-		margin-left: 1.5rem;
-		ul {
-			li {
-				line-height: 2rem;
-			}
-		}
-	}
 }
