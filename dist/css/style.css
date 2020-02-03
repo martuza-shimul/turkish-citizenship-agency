@@ -92,7 +92,7 @@ a:hover {
 
 .navbar {
   color: #f2f2f2;
-  text-transform: capitalize;
+  text-transform: uppercase;
   position: fixed;
   height: 85px;
   width: 100vw;
@@ -117,7 +117,7 @@ a:hover {
   letter-spacing: 1px;
   border-radius: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
@@ -145,6 +145,7 @@ a:hover {
 
 .navbar.scrolled .navbar-nav .nav-item .nav-link {
   color: #e30a17;
+  font-weight: 600;
 }
 
 .navbar.scrolled .navbar-nav .nav-item .nav-link:hover {
@@ -597,24 +598,24 @@ a:hover {
 
 .experience {
   padding: 10vh 0;
-  background: #d2dae2;
+  background: #fff;
 }
 
 .sub-heading,
 .ec-heading {
-  color: #50687b;
+  color: #1e272e;
   padding-bottom: 2rem;
 }
 
 .sub-heading h5,
 .ec-heading h5 {
-  font-size: 1.4rem;
-  line-height: 2.3rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
-.ec-heading {
-  color: #1e272e;
+.ec-image img {
+  margin: 0 auto;
 }
 
 .ec-iconbox {
