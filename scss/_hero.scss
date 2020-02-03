@@ -55,9 +55,9 @@
 				color: $primary-color;
 				border-color: $white;
 				&:hover {
-					background: $secondary-color;
-					color: $text-color;
-					border-color: $secondary-color;
+					background: $text-color;
+					color: $white;
+					border-color: $text-color;
 				}
 			}
 			.button-second {
@@ -67,9 +67,9 @@
 				color: $white;
 
 				&:hover {
-					background: $secondary-color;
-					color: $text-color;
-					border-color: $secondary-color;
+					background: $white;
+					color: $primary-color;
+					border-color: $white;
 				}
 			}
 		}

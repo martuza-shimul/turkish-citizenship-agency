@@ -1,11 +1,11 @@
 .why-us {
-	background: $secondary-color;
+	background: $text-rev;
 	padding: 8vh 0;
-	color: $text-rev;
+	color: $text-color;
 
 	.heading {
 		h1 {
-			color: $white;
+			color: $text-color;
 			// text-transform: capitalize;
 		}
 	}

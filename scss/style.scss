@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster|Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster|Montserrat|Raleway|Roboto&display=swap");
 @import "./variables";
 @import "./global";
 @import "./navbar";
@@ -21,7 +21,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Montserrat", sans-serif;
+	// font-family: "Montserrat", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 html {
 	scroll-behavior: smooth;

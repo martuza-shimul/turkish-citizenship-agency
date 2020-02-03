@@ -25,8 +25,8 @@
 	text-transform: capitalize;
 
 	&:hover {
-		background: transparent;
-		color: $text-color;
+		background: $text-color;
+		color: $white;
 		border: 1px solid $text-color;
 		// box-shadow: 3px 0px 8px 2px $shad;
 		box-shadow: rgba($text-color, 0.5) 0px 10px 10px -10px;
