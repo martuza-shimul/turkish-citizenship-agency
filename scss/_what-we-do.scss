@@ -43,13 +43,15 @@
 
 .what-we-do-dif {
 	// background: lighten($primary-color, 7);
-	background: $background;
+	background: $white;
 	// color: $text-rev;
 	padding: 5vh 0;
 
-	// .heading {
-	// 	h1 {
-	// 		color: $white;
-	// 	}
-	// }
+	.heading {
+		h1 {
+			font-size: 2rem;
+			text-transform: capitalize;
+			font-family: "Roboto", sans-serif;
+		}
+	}
 }
