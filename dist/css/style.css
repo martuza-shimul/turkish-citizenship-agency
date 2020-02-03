@@ -4,8 +4,8 @@
 }
 
 .heading h1 {
-  font-size: 2.5rem;
-  line-height: 3.5rem;
+  font-size: 2.2rem;
+  line-height: 3.1rem;
   font-weight: 900;
   color: #1e272e;
   text-transform: uppercase;
@@ -116,7 +116,7 @@ a:hover {
   font-weight: 500;
   letter-spacing: 1px;
   border-radius: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
 }
 
@@ -209,6 +209,7 @@ a:hover {
   font-weight: 700;
   text-transform: capitalize;
   letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero .hero-text .sub-heading {
@@ -220,9 +221,9 @@ a:hover {
 .hero .hero-text .sub-heading h5 {
   font-size: 1.1rem;
   line-height: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .hero .hero-text .hero-button {
@@ -460,11 +461,18 @@ a:hover {
   padding: 8vh 0;
 }
 
+.process .content {
+  margin-bottom: 2.8rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+
 .circle {
   font-weight: bold;
   padding: 15px 20px;
   border-radius: 50%;
-  background-color: #40e0d0;
+  background-color: #e30a17;
   color: #f2f2f2;
   max-height: 50px;
   z-index: 2;
@@ -477,7 +485,7 @@ a:hover {
 }
 
 .how-it-works.row .col-7 h5 {
-  color: #e30a17;
+  color: #1e272e;
   font-weight: 900;
   letter-spacing: 1px;
   font-size: 1.5rem;
@@ -487,7 +495,14 @@ a:hover {
 .how-it-works.row .col-7 p {
   color: #1e272e;
   font-size: 1rem;
-  line-height: 1.8rem;
+  line-height: 1.9rem;
+  font-weight: 500;
+}
+
+.how-it-works.row .col-7 ul li {
+  color: #1e272e;
+  font-size: 1rem;
+  line-height: 1.9rem;
   font-weight: 500;
 }
 
@@ -508,7 +523,7 @@ a:hover {
 .how-it-works.row .col-2::after {
   content: "";
   position: absolute;
-  border-left: 3px solid #40e0d0;
+  border-left: 3px solid #e30a17;
   z-index: 1;
 }
 
@@ -530,7 +545,7 @@ a:hover {
 
 .how-it-works.row .col-2.top::after {
   height: 50%;
-  left: calc(50% - 3px);
+  left: 50%;
   top: 0;
 }
 
@@ -540,7 +555,7 @@ a:hover {
 }
 
 .timeline hr {
-  border-top: 3px solid #40e0d0;
+  border-top: 3px solid #e30a17;
   margin: 0;
   top: 17px;
   position: relative;
@@ -554,7 +569,7 @@ a:hover {
 }
 
 .timeline .corner {
-  border: 3px solid #40e0d0;
+  border: 3px solid #e30a17;
   width: 100%;
   position: relative;
   border-radius: 15px;
