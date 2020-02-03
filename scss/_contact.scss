@@ -4,7 +4,9 @@
 
 	.contact-box {
 		// padding: 10px 0;
-
+		.contact-address {
+			display: flex;
+		}
 		h3 {
 			font-size: 1.6rem;
 			line-height: 2.2rem;
@@ -14,18 +16,24 @@
 			text-transform: capitalize;
 		}
 		p {
-			// img {
-			// 	margin-right: 10px;
-			// }
+			font-family: "Josefin Sans", sans-serif;
+			img {
+				margin-right: 10px;
+				height: 32px;
+				width: 32px;
+			}
 			span {
+				// display: inline-block;
 				font-size: 1.1rem;
 				color: $text-color;
 				font-weight: 500;
 				margin-left: 5px;
+				font-family: "Josefin Sans", sans-serif;
 
 				a {
 					text-decoration: none;
 					color: $text-color;
+					font-family: "Josefin Sans", sans-serif;
 				}
 			}
 		}
