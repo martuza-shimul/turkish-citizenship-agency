@@ -180,7 +180,7 @@
 .hero .hero-text {
   padding: 20vh 0 10vh 0;
   margin-right: -15px;
-  background: rgba(227, 10, 23, 0.7);
+  background: rgba(227, 10, 23, 0.8);
   height: 100%;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
@@ -417,12 +417,18 @@
 }
 
 .what-we-do .wwd-content-block h5 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 2px;
-  line-height: 2.1rem;
+  line-height: 1.9rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+}
+
+.what-we-do .wwd-content-block p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #f2f2f2;
 }
 
 .what-we-do-dif {
@@ -597,7 +603,8 @@
 .ec-iconbox .ec-icon-heading h5 {
   font-size: 1.2rem;
   line-height: 1.7rem;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .ec-iconbox .ec-icon-text p {
