@@ -677,24 +677,6 @@ a:hover {
   border-color: #e30a17;
 }
 
-.contact .contact-form .button {
-  background: #e30a17;
-  color: #f2f2f2;
-  padding: 10px 30px;
-  border-color: #e30a17;
-  font-size: 1.3rem;
-}
-
-.contact .contact-form .button:hover {
-  background: #40e0d0;
-  color: #f2f2f2;
-  border-color: #fff;
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-}
-
 .area-cover {
   padding: 5vh 0;
 }
@@ -732,7 +714,7 @@ a:hover {
 }
 
 .sticky-mobile {
-  background: #40e0d0;
+  background: #e30a17;
   color: #f2f2f2;
   width: 100vw;
   max-height: 53px;
@@ -771,7 +753,7 @@ a:hover {
 }
 
 .footer {
-  background: #40e0d0;
+  background: #e30a17;
   color: #f2f2f2;
   font-size: 0.8rem;
   font-weight: 500;

@@ -40,21 +40,21 @@
 				border-color: $primary-color;
 			}
 		}
-		.button {
-			background: $primary-color;
-			color: $text-rev;
+		// .button {
+		// 	background: $primary-color;
+		// 	color: $text-rev;
 
-			padding: 10px 30px;
-			border-color: $primary-color;
-			font-size: 1.3rem;
+		// 	padding: 10px 30px;
+		// 	border-color: $primary-color;
+		// 	font-size: 1.3rem;
 
-			&:hover {
-				background: $secondary-color;
-				color: $text-rev;
-				border-color: $white;
-				transform: scale(1.03, 1.03);
-				transition: 0.3s ease-in;
-			}
-		}
+		// 	&:hover {
+		// 		background: $secondary-color;
+		// 		color: $text-rev;
+		// 		border-color: $white;
+		// 		transform: scale(1.03, 1.03);
+		// 		transition: 0.3s ease-in;
+		// 	}
+		// }
 	}
 }
