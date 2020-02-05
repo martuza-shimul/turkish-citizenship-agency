@@ -55,6 +55,11 @@
 			}
 		}
 	}
+	.navbar {
+		&.scrolled {
+			background: darken($background, 50);
+		}
+	}
 	.navbar-nav {
 		background: $text-color;
 	}

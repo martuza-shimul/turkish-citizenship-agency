@@ -744,7 +744,7 @@ a:hover {
   position: fixed;
   left: 0;
   bottom: 0;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0;
 }
 
 .sticky-mobile .row {
@@ -869,6 +869,9 @@ a:hover {
   }
   .hero-shapes .hs-content .hs-content-text {
     font-size: 1rem;
+  }
+  .navbar.scrolled {
+    background: #475b6e;
   }
   .navbar-nav {
     background: #1e272e;
