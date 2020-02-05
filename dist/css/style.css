@@ -794,8 +794,8 @@ a:hover {
 .page-header {
   height: 60vh;
   padding: 15vh 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 10, 23, 0.6)), to(rgba(64, 224, 208, 0.8))), url("../img/hero4.jpg") no-repeat bottom;
-  background: linear-gradient(rgba(227, 10, 23, 0.6), rgba(64, 224, 208, 0.8)), url("../img/hero4.jpg") no-repeat bottom;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 10, 23, 0.5)), to(rgba(30, 39, 46, 0.3))), url("../img/hero.jpg") no-repeat bottom;
+  background: linear-gradient(rgba(227, 10, 23, 0.5), rgba(30, 39, 46, 0.3)), url("../img/hero.jpg") no-repeat bottom;
   background-size: cover;
   background-blend-mode: multiply;
 }
@@ -809,7 +809,9 @@ a:hover {
 .page-header .ph-text .ph-title h1 {
   font-weight: 900;
   font-size: 2.3rem;
-  border-radius: 5rem;
+  background: rgba(227, 10, 23, 0.8);
+  display: inline-block;
+  padding: 2rem;
 }
 
 .privacy-policy {
