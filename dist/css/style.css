@@ -145,7 +145,6 @@ a:hover {
 
 .navbar.scrolled .navbar-nav .nav-item .nav-link {
   color: #e30a17;
-  font-weight: 600;
 }
 
 .navbar.scrolled .navbar-nav .nav-item .nav-link:hover {
@@ -171,9 +170,15 @@ a:hover {
   text-align: center;
 }
 
+.quote-engine-wrapper .content {
+  font-size: 0.9rem;
+  display: block;
+  margin: 0.3rem 2rem;
+}
+
 .modal-footer {
   padding: 0.3rem;
-  background: #40e0d0;
+  background: #d2dae2;
 }
 
 .hero {
