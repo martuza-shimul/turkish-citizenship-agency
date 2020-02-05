@@ -47,7 +47,7 @@ const handleRadioClick = () => {
 		// const decision = list[i].checked;
 		if (list[i].checked) {
 			qepath.classList.add("hide");
-			qepathSecond.classList.remove("hide");
+			qepathLast.classList.remove("hide");
 			counter++;
 		}
 	}
